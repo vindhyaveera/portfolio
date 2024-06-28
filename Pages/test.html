@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Icon Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .roundedicon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            transition: background-color 0.3s linear;
+            text-align: center;
+            line-height: 50px; /* Vertically centers the icon */
+        }
+
+        .roundedicon i {
+            color: black;
+            transition: transform 0.3s linear;
+        }
+
+        .roundedicon:hover i {
+            transform: rotateX(180deg); /* Rotate the icon by 180 degrees on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="roundedicon">
+        <i class="fa-brands fa-facebook-f"></i>
+    </div>
+</body>
+</html>
