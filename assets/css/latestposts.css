@@ -271,6 +271,7 @@ body {
 }
 @media (max-width: 600px) {
   .headerimg {
+    height:600px;
     background-size: 100vw 500px;
   }
 
@@ -283,6 +284,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: start;
+   
   }
 
   .footerimg {
@@ -313,7 +315,7 @@ body {
     width: 95%;
     height: 120px;
   }
- 
+
   .latestpost button {
     width: 120px;
     height: 50px;
@@ -328,13 +330,10 @@ body {
   }
   .parentpost {
     height: auto;
-    /* height:500px; */
-    /* background-color: #fa5b0f; */
+    padding: 50px 0px;
   }
 
   .childpost {
     width: 95%;
-    /* height:2000px; */
-    /* background-color: aqua; */
   }
 }

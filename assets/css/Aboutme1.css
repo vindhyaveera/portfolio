@@ -16,6 +16,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 500px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .io {
@@ -23,6 +26,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1241,13 +1245,15 @@ h3 {
   }
   .link {
     width: 50%;
-    height:50px;
-    display:flex;
+    height: 50px;
+    display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: aqua; */
-   
-   }
+  }
+  .link p{
+    margin-bottom: 0px;
+  }
   .imgdiv {
     width: 95%;
     height: 90%;
@@ -1270,6 +1276,9 @@ h3 {
   .profiledetails {
     height: 135vh;
     /* background-color:#fa5b0f ; */
+  }
+  hr {
+    width: 90%;
   }
   .profileright {
     margin-top: 0px;
@@ -1304,7 +1313,8 @@ h3 {
     width: 90%;
   }
   .parentoffacts {
-    height: 55%;
+    height: 70%;
+    /* background-color: #fa5b0f; */
   }
   .expedu {
     height: 150vh;
@@ -1314,7 +1324,7 @@ h3 {
   }
   .programparent {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1326,7 +1336,7 @@ h3 {
     display: flex;
     gap: 50px;
     flex-direction: column;
-    /* background-color: #fa5b0f;  */
+    /* background-color: #fa5b0f;   */
   }
   .childprogramleft {
     width: 100%;
@@ -1409,12 +1419,11 @@ h3 {
   .testimonialparent h3 {
     display: none;
   }
- .testimonialparent{
-  display: none;
-
- }
-  .cards{
-    height:35vh;
+  .testimonialparent {
+    display: none;
+  }
+  .cards {
+    height: 35vh;
   }
 
   .cardsfoot {
