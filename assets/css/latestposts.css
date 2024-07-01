@@ -17,6 +17,15 @@ body {
   background-size: 100vw 500px;
   color: white;
 }
+.footerimg {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 500px;
+  color: white;
+}
+
 .io {
   width: 100%;
   height: 100%;
@@ -270,26 +279,26 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .headerimg {
-    height:600px;
-    background-size: 100vw 500px;
-  }
+   .headerimg {
+    height: 600px;
+    background-size: 100vw 600px;
+  } 
 
   .link {
     width: 45%;
   }
   .cardsfoot {
-    width: 95%;
+    width: 85%;
     height: 70%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
     justify-content: flex-start;
     align-items: start;
-   
   }
-
   .footerimg {
-    height: 700px;
-    background-size: 100vw 700px;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    /* background-color: aqua; */
   }
   .cate {
     display: flex;
