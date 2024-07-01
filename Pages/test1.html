@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flexbox Layout</title>
+    <style>
+      .tablerow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 40vw;
+        height: 200px;
+        grid-gap: 10px;
+      }
+      .col1 {
+        width: 20vw;
+        height: 80%;
+      }
+      .col2 {
+        width: 20vw;
+        height: 80%;
+      }
+      .col1row {
+        display: flex;
+        height: 20%;
+        gap: 10px;
+      }
+      .col2row {
+        height: 20%;
+        display: flex;
+        gap: 10px;
+      }
+      .col1row p {
+        width: 38%;
+      }
+      .col2row p {
+        width: 38%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profileright">
+      <h1>I'M <span>A Blogger</span></h1>
+      <div class="tablerow">
+        <div class="col1">
+          <div class="col1row">
+            <p class="head1">Name:</p>
+            <p class="heada">Tommy Bates</p>
+          </div>
+          <div class="col1row">
+            <p class="head1">Birthdate:</p>
+            <p class="heada">21 June 1990</p>
+          </div>
+          <div class="col1row">
+            <p class="head1">Nationality:</p>
+            <p>English</p>
+          </div>
+          <div class="col1row">
+            <p class="head1">Experience:</p>
+            <p>7 years</p>
+          </div>
+          <div class="col1row">
+            <p class="head1">Address:</p>
+            <p>Istanbul</p>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="col2row">
+            <p>Languages:</p>
+            <p>English,French</p>
+          </div>
+          <div class="col2row">
+            <p>Phone:</p>
+            <p>+34 21 1840 10</p>
+          </div>
+          <div class="col2row">
+            <p>Email:</p>
+            <p>example@domain.com</p>
+          </div>
+          <div class="col2row">
+            <p>Skype</p>
+            <p>tommy.bates</p>
+          </div>
+          <div class="col2row">
+            <p>Freelance</p>
+            <p>Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

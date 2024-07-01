@@ -86,11 +86,33 @@ body {
   margin-top: 25px;
   width: 70%;
 }
+.cardsfootbox ul i {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
+  color: #fa5b0f;
+  gap: 10px;
+}
+.cardsfootbox ul i .text {
+  color: white;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
 .cardsfootbox ul {
   list-style-type: none;
   padding: 0;
   line-height: 35px;
 }
+.cardsfootbox ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add space between icon and text */
+}
+
 .cardsfootbox ul i {
   color: #fa5b0f;
 }
@@ -152,7 +174,7 @@ body {
 }
 .childpost {
   width: 50%;
-  /* height: 80%; */
+  height: 80%;
   /* background-color: aqua; */
   display: flex;
   flex-direction: column;
@@ -213,11 +235,11 @@ body {
 }
 
 .imgcontent {
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .img {
   width: 100%;
@@ -233,4 +255,86 @@ body {
   width: 100%;
   height: 100%;
   /* background-color: #fa5b0f; */
+}
+@media (max-width: 1200px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .link {
+    width: 25%;
+  }
+  .childpost {
+    width: 73%;
+  }
+}
+@media (max-width: 600px) {
+  .headerimg {
+    background-size: 100vw 500px;
+  }
+
+  .link {
+    width: 45%;
+  }
+  .cardsfoot {
+    width: 95%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .footerimg {
+    height: 700px;
+    background-size: 100vw 700px;
+  }
+  .cate {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: #fa5b0f; */
+  }
+  .cateparent {
+    width: 130px;
+  }
+  .cate a {
+    width: 110px;
+  }
+  .imgcontent {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+  }
+  .rowcontent {
+    display: grid;
+    /* padding:5px; */
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    height: 120px;
+  }
+ 
+  .latestpost button {
+    width: 120px;
+    height: 50px;
+    /* background-color: aqua; */
+  }
+  .latestpost p {
+    /* background-color: aliceblue; */
+  }
+  .latestpost h1 {
+    width: 95vw;
+    height: 60px;
+  }
+  .parentpost {
+    height: auto;
+    /* height:500px; */
+    /* background-color: #fa5b0f; */
+  }
+
+  .childpost {
+    width: 95%;
+    /* height:2000px; */
+    /* background-color: aqua; */
+  }
 }

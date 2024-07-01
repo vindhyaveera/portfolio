@@ -1,141 +1,209 @@
-
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    width:100vw;
-    height:100vh;
-    overflow-x: hidden;
-    background-color:#1a1b18;
-    color:white;
-    font-family: 'roboto, Sans-serif';
-    font-size: 16px; 
-    font-weight: 400; 
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #1a1b18;
+  color: white;
+  font-family: "roboto, Sans-serif";
+  font-size: 16px;
+  font-weight: 400;
 }
-.menu{
-    width:100%;
-    height:10%;
-    display:flex;
-    /* background-color: white; */
-    color:black;
-    align-items: center;
-    justify-content: center;
-
+.menu {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  /* background-color: white; */
+  color: black;
+  align-items: center;
+  justify-content: center;
 }
-.list{
-    width:30%;
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-    list-style-type: none;
+.list {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
 }
-.list a{
-    text-decoration: none;
-    color:white;
+.list a {
+  text-decoration: none;
+  color: white;
 }
-.profileimg{
-    border-radius: 50%;
-    border: 10px solid #494848;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:68%;
-    height:50%;
-    object-fit: cover;
-    
+.profileimg {
+  border-radius: 50%;
+  border: 10px solid #494848;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68%;
+  height: 50%;
+  object-fit: cover;
 }
-.profilecontent{
-    width:100%;
-    height:80%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
- /* background-color: aliceblue;  */
+.profilecontent {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aliceblue;  */
 }
-.leftcontent{
-    width:50%;
-    /* height: 40%; */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: aqua;  */
-     padding-left:60px; 
-    
+.leftcontent {
+  width: 50%;
+  /* height: 40%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua;  */
+  padding-left: 60px;
 }
-.rightcontent{
-    width:65%;
-    height:70%;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.rightcontent {
+  width: 65%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.content{
-    display:flex;
-    justify-content:flex-start;
-    align-items: start;
-    flex-direction: column;
-    margin-bottom: 30px;  
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
- .p1{
-    margin-bottom:15px;
-    margin-top: 30px;
- }
-.content h1{
-    margin-bottom:30px;
-  
+.p1 {
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
-.contentpara{
-    width:80%;
-    line-height:30px;
-   
+.content h1 {
+  margin-bottom: 30px;
 }
-.profilebutton{
-    width:100%;
-    display:flex;
-    justify-content: flex-start;
-    align-items: start;
+.contentpara {
+  width: 80%;
+  line-height: 30px;
+}
+.profilebutton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
 }
 .btn {
-    background-color: #fa5b0f;
-    border: none;
-    color: black;
-    padding: 12px 32px;
-    border-radius:50px;
-    font-size: 16px;
-    cursor: pointer;
-     margin-right:25px; 
+  background-color: #fa5b0f;
+  border: none;
+  color: black;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 25px;
 }
-.btn:hover{
-    background-color: gray;
-    color:white;
-  }
+.btn:hover {
+  background-color: gray;
+  color: white;
+}
 
-  .btn2{
-    background-color: black;
+.btn2 {
+  background-color: black;
 
-    border: 1px solid #fa5b0f;
-    color:#fa5b0f;
-    padding: 12px 38px;
-    border-radius:50px;
-    font-size: 16px;
-    cursor: pointer;
-    
+  border: 1px solid #fa5b0f;
+  color: #fa5b0f;
+  padding: 12px 38px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
 }
 .btn i {
-    margin-right: 8px; /* You can adjust this value as needed */
-  }
-.btn2 i {
-    margin-right: 12px; /* You can adjust this value as needed */
-  }
-
-.btn2:hover{
-    background-color: #fa5b0f;
-    color:white;
+  margin-right: 8px; /* You can adjust this value as needed */
 }
-.splitup{
-    color:#fa5b0f;
-}   
-    
+.btn2 i {
+  margin-right: 12px; /* You can adjust this value as needed */
+}
+
+.btn2:hover {
+  background-color: #fa5b0f;
+  color: white;
+}
+.splitup {
+  color: #fa5b0f;
+}
+
+@media (max-width: 1200px) {
+  .profilecontent {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    flex-direction: column;
+    /* background-color: #74a01e;  */
+  }
+  .leftcontent {
+    width: 100%;
+    height: 70%;
+    /* background-color: #fa5b0f;   */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0px;
+  }
+  .rightcontent {
+    width: 90%;
+    height: 20%;
+  }
+  .rightcontent p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .rightcontent h1 {
+    font-size: 64px;
+  }
+  .profileimg {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .profilecontent {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    flex-direction: column;
+    /* background-color: #74a01e; */
+  }
+  .leftcontent {
+    width: 100%;
+    height: 50%;
+    /* background-color: #fa5b0f; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0px;
+  }
+  .profileimg {
+    width: 350px;
+    height: 350px;
+  }
+  .rightcontent {
+    width: 90%;
+    height: 60%;
+    /* background-color: #fa5b0f; */
+  }
+  .rightcontent p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .rightcontent h1 {
+    font-size: 48px;
+  }
+  .profilebutton{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+  }
+  .list{
+    width:70%;
+  }
+}

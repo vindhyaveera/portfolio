@@ -45,79 +45,52 @@
         </div>
         <div class="profileright">
           <h1>I'M <span>A Blogger</span></h1>
-          <table class="tablerow">
-            <tr>
-              <td>Name:</td>
-              <td>Tommy Bates</td>
-              <td>Languages:</td>
-              <td>English,French</td>
-            </tr>
-            <tr>
-              <td>Birthdate:</td>
-              <td>21 June 1990</td>
-              <td>Phone:</td>
-              <td>+34 21 1840 10</td>
-            </tr>
-            <tr>
-              <td>Nationality:</td>
-              <td>English</td>
-              <td>Email:</td>
-              <td>example@domain.com</td>
-            </tr>
-            <tr>
-              <td>Experience:</td>
-              <td>7 years</td>
-              <td>Skype</td>
-              <td>tommy.bates</td>
-            </tr>
-            <tr>
-              <td>Address:</td>
-              <td>Istanbul</td>
-              <td>Freelance</td>
-              <td>Available</td>
-            </tr>
-          </table>
-
-          <!-- <div class="details">
-          <div class="detailsp">
-            <p>Name:</p>
-            <p>Tommy Bates</p>
-            <p>Languages:</p>
-            <p>English,French</p>
+          <div class="tablerow">
+            <div class="col1">
+              <div class="col1row">
+                <p class="head1">Name:</p>
+                <p class="heada">Tommy Bates</p>
+              </div>
+              <div class="col1row">
+                <p class="head1">Birthdate:</p>
+                <p class="heada">21 June 1990</p>
+              </div>
+              <div class="col1row">
+                <p class="head1">Nationality:</p>
+                <p>English</p>
+              </div>
+              <div class="col1row">
+                <p class="head1">Experience:</p>
+                <p>7 years</p>
+              </div>
+              <div class="col1row">
+                <p class="head1">Address:</p>
+                <p>Istanbul</p>
+              </div>
+            </div>
+            <div class="col2">
+              <div class="col2row">
+                <p>Languages:</p>
+                <p>English,French</p>
+              </div>
+              <div class="col2row">
+                <p>Phone:</p>
+                <p>+34 21 1840 10</p>
+              </div>
+              <div class="col2row">
+                <p>Email:</p>
+                <p>example@domain.com</p>
+              </div>
+              <div class="col2row">
+                <p>Skype</p>
+                <p>tommy.bates</p>
+              </div>
+              <div class="col2row">
+                <p>Freelance</p>
+                <p>Available</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="details">
-          <div class="detailsp">
-            <p>Birthdate:</p>
-            <p>21 June 1990</p>
-            <p>Phone:</p>
-            <p>+34 21 1840 10</p>
-          </div>
-        </div>
-        <div class="details">
-          <div class="detailsp">
-            <p>Nationality:</p>
-            <p>English</p>
-            <p>Email:</p>
-            <p>example@domain.com</p>
-          </div>
-        </div>
-        <div class="details">
-          <div class="detailsp">
-            <p>Experience:</p>
-            <p>7 years</p>
-            <p>Skype</p>
-            <p>tommy.bates</p>
-          </div>
-        </div>
-        <div class="details">
-          <div class="detailsp">
-            <p>Address:</p>
-            <p>Istanbul</p>
-            <p>Freelance</p>
-            <p>Available</p>
-          </div>
-        </div> -->
 
           <button type="">
             <i class="fa-solid fa-download"></i>DOWNLOAD MY CV
@@ -398,13 +371,13 @@
             <p>Digital Experience</p>
           </div>
           <div class="servicebox">
-            <div class="roundedicon">
+            <div class="roundedicon" id="roundedfull">
               <i class="fa-solid fa-chart-area"></i>
             </div>
             <p>Content Marketing</p>
           </div>
           <div class="servicebox">
-            <div class="roundedicon">
+            <div class="roundedicon" id="roundedfull">
               <i class="fa-brands fa-facebook-f"></i>
             </div>
             <p>Social Media Design</p>
@@ -626,7 +599,7 @@
         </div>
       </div>
     </div>
-    <div class="headerimg">
+    <div class="footerimg">
       <div class="ioend">
         <div class="cardsfoot">
           <div class="cardsfootbox">
@@ -636,32 +609,34 @@
           <div class="cardsfootbox">
             <h3>Quick Links</h3>
             <ul>
-              <li>
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Licenses
-              </li>
-              <li><i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Forums</li>
-              <li>
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Meetups
-              </li>
-              <li>
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Sitemap
-              </li>
+              <li><i class="fa-solid fa-caret-right"></i>Licenses</li>
+              <li><i class="fa-solid fa-caret-right"></i>Forums</li>
+              <li><i class="fa-solid fa-caret-right"></i>Meetups</li>
+              <li><i class="fa-solid fa-caret-right"></i>Sitemap</li>
             </ul>
           </div>
           <div class="cardsfootbox">
             <h3>SOCIAL MEDIA</h3>
             <ul>
               <li>
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Facebook
+                <i class="fa-solid fa-caret-right"
+                  ><span class="text">Face book</span></i
+                >
               </li>
               <li>
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Twitter
+                <i class="fa-solid fa-caret-right"
+                  ><span class="text">Twitter</span></i
+                >
               </li>
               <li>
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Linkedin
+                <i class="fa-solid fa-caret-right"
+                  ><span class="text">Linkedin</span></i
+                >
               </li>
               <li>
-                <i class="fa-solid fa-caret-right"></i>&nbsp;&nbsp;Instagram
+                <i class="fa-solid fa-caret-right"
+                  ><span class="text">Instagram</span></i
+                >
               </li>
             </ul>
           </div>

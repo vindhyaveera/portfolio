@@ -86,6 +86,32 @@ body {
   margin-top: 25px;
   width: 70%;
 }
+.cardsfootbox ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add space between icon and text */
+}
+
+/* .cardsfootbox ul li {
+  display: flex;
+} */
+.cardsfootbox ul i {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
+  color: #fa5b0f;
+  gap: 10px;
+}
+
+.cardsfootbox ul i .text {
+  color: white;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
 .cardsfootbox ul {
   list-style-type: none;
   padding: 0;
@@ -170,7 +196,7 @@ iframe {
 .childcontact {
   width: 80%;
   height: 80%;
-  /* background-color: aqua;  */
+  /* background-color: aqua;   */
   display: flex;
   gap: 25px;
 }
@@ -290,18 +316,25 @@ iframe {
   align-items: center;
   background-color: #222222;
   border: 0.5px solid #fa5b0f;
+  /* transition: transform 0.1s, color 0.1s; */
 }
 .iconborder:hover {
   background-color: #fa5b0f;
 }
 .iconborder i {
-  transition: transform 0.1s linear;
+  transition: transform 0.1s ease-in-out;
 }
 .iconborder:hover i {
   transform: rotateY(180deg);
   color: black;
-  transition: 0.2s transform linear;
+  transition: 0.1s transform ease-in-out;
 }
+#rotatefull:hover i {
+  transform: rotateY(360deg);
+  color: black;
+  transition: 0.1s transform ease-in-out;
+}
+
 .content {
   width: 100%;
   height: 100%;
@@ -350,4 +383,97 @@ iframe {
 .contactbutton:hover {
   background-color: gray;
   color: white;
+}
+@media (max-width: 1200px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .link {
+    width: 25%;
+  }
+  .parentmap {
+    height: 70vh;
+  }
+  .childmap {
+    width: 90%;
+    height: 70%;
+  }
+  .childcontact {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainrightcontact {
+    width: 100%;
+  }
+  .social {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+  }
+  .social p {
+    width: 100%;
+    /* background-color: #fa5b0f; */
+  }
+  .mainrightcontact {
+    height: 400px;
+  }
+  .parentbutton {
+    height: 25%;
+  }
+}
+@media(max-width:600px){
+  .cardsfoot {
+    width: 95%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .footerimg {
+    height: 700px;
+    background-size: 100vw 700px;
+  }
+  .cate {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: #fa5b0f; */
+  }
+  .cateparent {
+    width: 130px;
+  }
+  .cate a {
+    width: 110px;
+  }
+  .link{
+    width:200px;
+  }
+  .lefticon{
+    width:90vw;
+  }
+  .social p{
+    width:95vw;
+  }
+  .rightcontent{
+    width:90vw;
+    display:flex;
+    flex-direction: column;
+  }
+  .parentcontact{
+    height:120vh;
+  }
+  .rightcontent{
+    height:200px;
+  }
+  .headerimg{
+    height: 600px;
+  }
+  .contactbutton{
+    width:60vw;
+    background-color: #fa5b0f;
+  }
 }

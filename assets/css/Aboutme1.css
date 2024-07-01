@@ -17,6 +17,7 @@ body {
   background-size: 100vw 500px;
   color: white;
 }
+
 .io {
   width: 100%;
   height: 100%;
@@ -55,7 +56,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3px;
-  /* background-color: blue;    */
+  /* background-color: blue;     */
 }
 .profilechild {
   width: 90%;
@@ -104,6 +105,37 @@ body {
   top: 35px;
   left: 0;
 }
+.tablerow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 40vw;
+  height: 200px;
+  grid-gap: 10px;
+}
+.col1 {
+  width: 20vw;
+  height: 80%;
+}
+.col2 {
+  width: 20vw;
+  height: 80%;
+}
+.col1row {
+  display: flex;
+  height: 20%;
+  gap: 10px;
+}
+.col2row {
+  height: 20%;
+  display: flex;
+  gap: 10px;
+}
+.col1row p {
+  width: 38%;
+}
+.col2row p {
+  width: 38%;
+}
 
 .profileright {
   width: 45%;
@@ -116,16 +148,6 @@ body {
 }
 .profileright h1 {
   margin-bottom: 20px;
-}
-.tablerow {
-  width: 100%;
-}
-
-tr {
-  line-height: 40px;
-  color: white;
-  font-size: 18px;
-  font: normal;
 }
 .profileright span {
   color: #fa5b0f;
@@ -467,7 +489,7 @@ h3 {
   height: 13px;
   background-color: gray;
   border-radius: 50%;
-  margin-right: 40px; /* Adjust margin for spacing between rounded divs */
+  margin-right: 40px;
 }
 .rounddiv1 {
   display: flex;
@@ -537,13 +559,20 @@ h3 {
     /* transform: translate(-50%, -50%); */
 
     color: black;
-    transition: 0.3s transform linear;
+    transition: 0.2s transform linear;
+  }
+  #roundedfull {
+    transform: rotateY(360deg);
+    /* transform: translate(-50%, -50%); */
+
+    color: black;
+    transition: 0.1s transform ease-in;
   }
 }
 .roundedicon {
   display: inline-block;
 
-  transition: transform 0.3s linear;
+  transition: transform 0.1s linear;
 }
 
 .servicecardgrid {
@@ -688,6 +717,7 @@ h3 {
 .text i {
   color: #fa5b0f;
 }
+
 .textdark {
   display: flex;
   justify-content: flex-start;
@@ -725,6 +755,20 @@ h3 {
 .third button:hover {
   background-color: gray;
 }
+.footerimg {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 500px;
+  color: white;
+}
+.footerimg img {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
 .ioend {
   width: 100%;
   height: 100%;
@@ -749,7 +793,7 @@ h3 {
 .cardsfootbox {
   width: 100%;
   height: 80%;
-  /* background-color: antiquewhite;   */
+  /* background-color: antiquewhite;    */
   color: white;
   display: flex;
   font-size: 16px;
@@ -766,11 +810,34 @@ h3 {
 .cardsfootbox ul {
   list-style-type: none;
   padding: 0;
-  line-height: 35px;
+  /* line-height: 65px; */
 }
+.cardsfootbox ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add space between icon and text */
+}
+
+/* .cardsfootbox ul li {
+  display: flex;
+} */
 .cardsfootbox ul i {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
   color: #fa5b0f;
+  gap: 10px;
 }
+
+.cardsfootbox ul i .text {
+  color: white;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
 .cate {
   width: 100%;
   /* height:100%; */
@@ -847,6 +914,7 @@ h3 {
   /* justify-content: ; */
   /* align-items: flex-end; */
 }
+
 .teamgrid {
   width: 100%;
   height: 80%;
@@ -1002,4 +1070,375 @@ h3 {
 .namefirst {
   color: #fa5b0f;
   font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .profiledetails {
+    /* background-color: #fa5b0f;   */
+  }
+  .profilechild {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+  }
+  .profileimg {
+    width: 95%;
+    height: 50%;
+    /* background-color: #b6aba6; */
+  }
+  .imgdivchild {
+    width: 95%;
+    height: 95%;
+    top: 5px;
+    left: 30;
+    /* background-color: #fa5b0f; */
+  }
+  .imgdiv {
+    width: 95%;
+    height: 95%;
+  }
+  .posimg {
+    width: 100%;
+    height: 100%;
+    /* background-color: #222222; */
+  }
+  .profileright {
+    width: 90%;
+    margin-bottom: 0px;
+  }
+  .col1 {
+    width: 45vw;
+    height: 80%;
+    /* background-color: #fa5b0f; */
+  }
+  .col2 {
+    width: 45vw;
+    height: 80%;
+    /* background-color: #12ac26; */
+  }
+
+  .hr {
+    width: 300px;
+  }
+  .parentitems {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 20px;
+    width: 90%;
+  }
+  .items {
+    width: 100%;
+    height: 100%;
+  }
+  .parentoffacts {
+    height: 35%;
+  }
+  .childoffacts {
+    height: 100%;
+  }
+  .expedudetails {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 30px;
+  }
+  .expedu {
+    height: 1000px;
+    gap: 60px;
+
+    /* background-color: #fa5b0f; */
+  }
+  .expleft {
+    width: 100%;
+    border-left: 0.1px solid gray;
+    gap: 10%;
+  }
+  .expright {
+    width: 100%;
+    gap: 10%;
+  }
+  .expdetails h3,
+  p {
+    margin-bottom: 10px;
+  }
+  .contentprogram {
+    width: 90%;
+  }
+  .clientscards {
+    width: 90%;
+  }
+  .servicecardgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .contentlanguage {
+    width: 90%;
+  }
+  .servicecard {
+    width: 90%;
+    height: 450px;
+  }
+  .serviceparent {
+    height: 600px;
+  }
+  .servicebox {
+    height: 100px;
+  }
+  .clientsparents h2 {
+    width: 90%;
+  }
+  .servicecard h2 {
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  .priceparent {
+    height: 1000px;
+  }
+  .pricecards {
+    width: 90%;
+  }
+  .pricecardsbox {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    height: 100%;
+  }
+  .priceparent h2 {
+    width: 90%;
+    height: 5%;
+  }
+  .teamparent h2 {
+    width: 90%;
+  }
+  .teamchild {
+    width: 90%;
+  }
+  .cardtestimonial {
+    width: 90%;
+  }
+  .testimonialparent h3 {
+    width: 90%;
+  }
+  .childoffacts h2 {
+    width: 90%;
+  }
+  .first h2 {
+    height: 30px;
+  }
+  .first {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .headerimg {
+    background-size: 100vw 450px;
+  }
+  .headerimg img {
+    object-fit: contain;
+  }
+  .link {
+    width: 50%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+   
+   }
+  .imgdiv {
+    width: 95%;
+    height: 90%;
+    /* background-color: aqua; */
+  }
+  .profileimg {
+    height: 500px;
+    /* background-color: aqua; */
+  }
+  .imgdivchild {
+    width: 90%;
+    height: 90%;
+    top: 10px;
+    left: 0px;
+  }
+  .posimg {
+    width: 100%;
+    height: 80%;
+  }
+  .profiledetails {
+    height: 135vh;
+    /* background-color:#fa5b0f ; */
+  }
+  .profileright {
+    margin-top: 0px;
+    height: 500px;
+
+    /* background-color: #918985; */
+  }
+  .tablerow {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 50vh;
+    grid-gap: 0px;
+  }
+  .col1 {
+    width: 90vw;
+    height: 100%;
+    /* background-color: #fa5b0f; */
+  }
+  .col2 {
+    width: 90vw;
+    height: 100%;
+    background-color: #222222;
+  }
+  .profileright button {
+    margin-top: 0px;
+  }
+
+  .parentitems {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    width: 90%;
+  }
+  .parentoffacts {
+    height: 55%;
+  }
+  .expedu {
+    height: 150vh;
+    gap: 60px;
+
+    /* background-color: #fa5b0f; */
+  }
+  .programparent {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+  }
+  .contentprogram {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    /* background-color: #fa5b0f;  */
+  }
+  .childprogramleft {
+    width: 100%;
+    height: 40vh;
+    /* background-color: #222222; */
+  }
+  .childprogramright {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: #e91818; */
+  }
+  .languageparent {
+    width: 100vw;
+    height: 90vh;
+    /* background-color: #fa5b0f; */
+  }
+  .contentlanguage {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .childlanguageleft {
+    width: 90vw;
+    height: 50vh;
+  }
+  .childlanguageright {
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+  }
+  .rounded-div {
+    margin-right: 30px;
+  }
+  .servicecardgrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .servicecard {
+    width: 90%;
+    height: 100vh;
+  }
+  .serviceparent {
+    height: 130vh;
+    gap: 0px;
+  }
+  .clientscards {
+    height: 130vh;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .clientsparents {
+    height: 150vh;
+  }
+  .clientscardbox {
+    height: 17vh;
+  }
+  .priceparent {
+    height: 180vh;
+  }
+  .pricecardsbox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+  }
+  .teamparent {
+    height: 180vh;
+    /* background-color: yellow; */
+  }
+  .teamgrid {
+    height: 160vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: black;
+  }
+  .testimonialparent h3 {
+    display: none;
+  }
+ .testimonialparent{
+  display: none;
+
+ }
+  .cards{
+    height:35vh;
+  }
+
+  .cardsfoot {
+    width: 95%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .footerimg {
+    height: 700px;
+    background-size: 100vw 700px;
+  }
+  .cate {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: #fa5b0f; */
+  }
+  .cateparent {
+    width: 130px;
+  }
+  .cate a {
+    width: 110px;
+  }
 }
