@@ -249,7 +249,7 @@ body {
     grid-template-columns: repeat(2, 2fr);
   }
   .gridimage {
-    height: 70vh;
+    height: 60vh;
   }
 }
 @media (max-width: 600px) {
