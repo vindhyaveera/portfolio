@@ -421,7 +421,7 @@ iframe {
   }
   .mainrightcontact {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   /* .parentcontent{
     height:35vh;
@@ -437,7 +437,7 @@ iframe {
   }
 
   .parentbutton {
-    height: 20%;
+    height: 25%;
   }
 }
 
