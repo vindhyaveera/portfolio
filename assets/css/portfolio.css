@@ -240,7 +240,7 @@ body {
     width: 25%;
   }
   .gridimages {
-    height: 150vh;
+    height: 200vh;
   }
   .gridimagesinner {
     display: grid;
@@ -249,7 +249,7 @@ body {
     grid-template-columns: repeat(2, 2fr);
   }
   .gridimage {
-    height: 50vh;
+    height: 70vh;
   }
 }
 @media (max-width: 600px) {
