@@ -257,7 +257,7 @@ iframe {
   display: flex;
   border-radius: 30px;
   justify-content: flex-start;
-  background-color: #d40b0b;
+  /* background-color: #d40b0b; */
 }
 .parentbutton {
   width: 100%;
