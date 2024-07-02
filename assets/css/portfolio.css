@@ -247,6 +247,7 @@ body {
     width: 95%;
     height: auto;
     grid-template-columns: repeat(2, 2fr);
+    background-color: #c92121;
   }
   .gridimage {
     height: 20vh;
