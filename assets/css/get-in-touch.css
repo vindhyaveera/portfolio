@@ -202,12 +202,14 @@ iframe {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
+  /* background-color: #fa5b0f; */
 }
 .childcontact {
   width: 80%;
   height: 80%;
   display: flex;
   gap: 25px;
+  /* background-color:aqua ; */
 }
 .leftcontact {
   width: 30%;
@@ -230,7 +232,7 @@ iframe {
 .mainrightcontact {
   width: 70%;
   height: auto;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 .rightcontent {
   display: flex;
@@ -422,17 +424,16 @@ iframe {
     width: 35%;
     justify-content: center;
   }
+ 
   .social p {
     width: 100%;
-    /* background-color: #fa5b0f; */
   }
-  /* .mainrightcontact {
-    height: 400px;
-  } */
+
   .parentbutton {
     height: 25%;
   }
 }
+
 @media (max-width: 600px) {
   .cardsfoot {
     width: 85%;
@@ -452,6 +453,12 @@ iframe {
     justify-content: flex-start;
     flex-direction: column;
     /* background-color: #fa5b0f; */
+  }
+  .parentcontact{
+    height:130vh;
+     }
+  .childcontact{
+    height:110vh;
   }
   .cateparent {
     width: 140px;
@@ -480,7 +487,7 @@ iframe {
     height: 200px;
   }
   .headerimg {
-    height: 600px;
+    height: 100vh;
   }
   .contactbutton {
     width: 60vw;
