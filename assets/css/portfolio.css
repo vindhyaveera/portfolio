@@ -250,7 +250,7 @@ body {
   }
   .gridimage {
     /* width: 80%; */
-    height: 20vh;
+    height: 30vh;
   }
 }
 @media (max-width: 600px) {
