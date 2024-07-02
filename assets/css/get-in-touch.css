@@ -437,12 +437,13 @@ iframe {
   }
 
   .parentbutton {
-    height: 25%;
+    height: 20%;
   }
 }
 
 @media (max-width: 600px) {
   .cardsfoot {
+    
     width: 85%;
     height: 70%;
     display: grid;
