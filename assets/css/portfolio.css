@@ -14,7 +14,7 @@ body {
   height: 80vh;
   background-image: url("../images/img2.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw 500px;
+  background-size: 100vw 80vh;
   color: white;
 }
 .gridimages {
