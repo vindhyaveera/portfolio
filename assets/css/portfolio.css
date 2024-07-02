@@ -240,7 +240,7 @@ body {
     width: 25%;
   }
   .gridimages {
-    height: 180vh;
+    height: auto;
   }
   .gridimagesinner {
     display: grid;
