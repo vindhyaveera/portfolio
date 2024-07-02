@@ -409,6 +409,9 @@ iframe {
     width: 90%;
     height: 70%;
   }
+  .parentcontact{
+    height:100vh;
+  }
   .childcontact {
     width: 90%;
     height: 90%;
@@ -480,9 +483,6 @@ iframe {
     display: flex;
     flex-direction: column;
   }
-  /* .parentcontact{
-    height:120vh;
-  }*/
   .rightcontent {
     height: 200px;
   }
