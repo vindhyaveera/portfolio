@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   width: 100vw;
@@ -198,12 +199,12 @@ body {
   .rightcontent h1 {
     font-size: 48px;
   }
-  .profilebutton{
-    display:flex;
+  .profilebutton {
+    display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
   }
-  .list{
-    width:70%;
+  .list {
+    width: 70%;
   }
 }
