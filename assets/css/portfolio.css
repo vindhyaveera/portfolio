@@ -259,7 +259,7 @@ body {
   .gridimages {
     width:100vw;
     height: 350vh;
-    background-color: #fa5b0f;
+    /* background-color: #fa5b0f; */
     display:flex;
     justify-content: center;
     align-items: center;
@@ -271,7 +271,7 @@ body {
     /* background-color: aqua; */
   }
   .link {
-    width: 55%;
+    width: 75%;
   }
   .headerimg h1 {
     font-size: 20px;
@@ -306,8 +306,8 @@ body {
     align-items: start;
   }
   .footerimg {
-    height: 100vh;
-    background-size: 100vw 100vh;
+    height: 120vh;
+    background-size: 100vw 120vh;
   }
 
   .cate {
