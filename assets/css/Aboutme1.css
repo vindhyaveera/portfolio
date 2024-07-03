@@ -1449,14 +1449,14 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  /* .servicecard {
+  .servicecard {
     width: 90%;
-    height: 100vh;
+    height: 120vh;
   }
   .serviceparent {
-    height: 130vh;
+    height: 140vh;
     gap: 0px;
-  } */
+  }
   .clientscards {
     height: 130vh;
     grid-template-columns: repeat(1, 1fr);
