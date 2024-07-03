@@ -1304,6 +1304,7 @@ h3 {
     align-items: center;
     /* background-color: aqua; */
   }
+  
   .link p {
     margin-bottom: 0px;
   }
@@ -1321,6 +1322,9 @@ h3 {
     height: 90%;
     top: 10px;
     left: 0px;
+  }
+  .childiffacts{
+    height:90vh;
   }
   .posimg {
     width: 100%;
