@@ -1295,12 +1295,7 @@ h3 {
   }
 }
 @media (max-width: 600px) {
-  .headerimg {
-    background-size: 100vw 450px;
-  }
-  .headerimg img {
-    object-fit: contain;
-  }
+
   .link {
     width: 50%;
     height: 50px;
