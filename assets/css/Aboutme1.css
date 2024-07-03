@@ -159,46 +159,54 @@ body {
 .tablerow {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 40vw;
+  width: 80%;
   height: 200px;
   grid-gap: 0px;
+  background-color: #1f1f1f;
 }
+.col1row p {
+  width: 100%;
+  background-color: #18e265;
+}
+.col2row p {
+  width: 80%;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+}
+
 .col1 {
-  width: 25vw;
+  width: 100%;
   height: 80%;
 }
 .col2 {
-  width: 25vw;
+  width: 100%;
   height: 80%;
 }
 .col1row {
   display: flex;
-  /* background-color: #fa5b0f; */
-  /* width: 50%; */
+  background-color: #fa5b0f;
+  width: 100%;
   height: 20%;
-  gap: 10px;
+  /* gap: 10px; */
 }
 .col2row {
   height: 20%;
   display: flex;
-  /* background-color: #fa5b0f; */
+  width: 100%;
 
-  gap: 10px;
-}
-.col1row p {
-  width: 38%;
-}
-.col2row p {
-  width: 38%;
+  background-color: #fa5b0f;
+
+  /* gap: 10px; */
 }
 
 .profileright {
-  width: 60%;
-  height: 100vh;
+  width: 55%;
+  height: 70vh;
   color: white;
   font-size: 20px;
   font: normal;
-  /* background-color: antiquewhite;    */
+  background-color: antiquewhite;
   margin-top: 90px;
 }
 .profileright h1 {
@@ -1356,14 +1364,16 @@ h3 {
     grid-gap: 0px;
   }
   .col1 {
-    width: 95vw;
+    width: 100vw;
     height: 100%;
-    background-color: #18e265; 
+    font-size: 16px;
+    background-color: #18e265;
   }
   .col2 {
-    width: 95vw;
+    width: 100vw;
     height: 100%;
-    background-color: #222222; 
+    font-size: 16px;
+    background-color: #222222;
   }
   .profileright button {
     margin-top: 0px;
