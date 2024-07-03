@@ -1328,14 +1328,15 @@ h3 {
   }
   .profiledetails {
     height: 135vh;
-    /* background-color:#fa5b0f ; */
+    background-color:#fa5b0f ; 
   }
   hr {
     width: 90%;
   }
   .profileright {
     margin-top: 0px;
-    height: 500px;
+    width:95%;
+    height: 100vh;
 
     /* background-color: #918985; */
   }
@@ -1514,5 +1515,8 @@ h3 {
   }
   .cate a {
     width: 140px;
+  }
+  .footend{
+    width:90%;
   }
 }
