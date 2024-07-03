@@ -565,7 +565,7 @@ h3 {
 }
 .serviceparent {
   width: 100%;
-  height: 450px;
+  height: 100vh;
   /* background-color: #fa5b0f; */
   display: flex;
   justify-content: center;
@@ -574,7 +574,7 @@ h3 {
 }
 .servicecard {
   width: 80%;
-  height: 300px;
+  height: 90vh;
   /* background-color:aqua;  */
   display: flex;
   flex-direction: column;
@@ -1449,14 +1449,14 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .servicecard {
+  /* .servicecard {
     width: 90%;
     height: 100vh;
   }
   .serviceparent {
     height: 130vh;
     gap: 0px;
-  }
+  } */
   .clientscards {
     height: 130vh;
     grid-template-columns: repeat(1, 1fr);
