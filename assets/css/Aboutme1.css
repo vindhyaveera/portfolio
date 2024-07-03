@@ -1349,6 +1349,7 @@ h3 {
   .tablerow {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width:80vw;
     height: 50vh;
     grid-gap: 0px;
   }
