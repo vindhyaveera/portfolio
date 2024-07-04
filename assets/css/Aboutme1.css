@@ -1129,7 +1129,7 @@ h3 {
 }
 @media (max-width: 1200px) {
   .profiledetails {
-    height: 70vh;
+    height: 100vh;
   }
   .profilechild {
     display: flex;
@@ -1164,7 +1164,7 @@ h3 {
   }
   .profileright {
     width: 90%;
-    height: 30%;
+    height: 50%;
     margin-bottom: 0px;
   }
   .col1 {
