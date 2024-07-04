@@ -1128,30 +1128,33 @@ h3 {
   font-size: 20px;
 }
 @media (max-width: 1200px) {
+  .profiledetails {
+    height: 70vh;
+  }
   .profilechild {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: 100%;
     /* background-color: aqua; */
   }
   .profileimg {
     width: 95%;
-    height: 50%;
+    height: 40%;
     /* background-color: #b6aba6; */
   }
   hr {
     width: 90%;
   }
   .imgdivchild {
-    width: 90%;
+    width: 75%;
     height: 95%;
-    top: 2px;
-    left: 20px;
+    top: -10px;
+    left: 70px;
     /* background-color: #fa5b0f; */
   }
   .imgdiv {
-    width: 90%;
+    width: 75%;
     height: 95%;
   }
   .posimg {
@@ -1161,23 +1164,34 @@ h3 {
   }
   .profileright {
     width: 90%;
+    height: 30%;
     margin-bottom: 0px;
   }
   .col1 {
-    width: 45vw;
+    width: 40vw;
     height: 80%;
     /* background-color: #fa5b0f; */
   }
   .col2 {
-    width: 45vw;
+    width: 40vw;
     height: 80%;
     /* background-color: #12ac26; */
   }
+  .col1row {
+    width: 100%;
+  }
+  .col2row {
+    width: 100%;
+  }
+  .col2row p {
+    width: 30vw;
+  }
+
   .posimgpara {
-    top: 500px;
+    top: 230px;
   }
   .socialicon {
-    top: 530px;
+    top: 260px;
   }
 
   .parentitems {
@@ -1191,24 +1205,25 @@ h3 {
     height: 100%;
   }
   .parentoffacts {
-    height: 35%;
+    height: 45vh;
   }
   .childoffacts {
     height: 100%;
   }
   .expedudetails {
     width: 90%;
-    height: auto;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     border: none;
     gap: 30px;
+    padding: 20px, 0;
   }
   .expedu {
-    height: 1000px;
+    height: auto;
     gap: 60px;
 
-    /* background-color: #fa5b0f; */
+    /* background-color: #fa5b0f;  */
   }
   hr {
     width: 90%;
@@ -1286,12 +1301,20 @@ h3 {
   .childoffacts h2 {
     width: 90%;
   }
+  .expdetails p,
+  h3 {
+    margin-bottom: 0px;
+  }
+
   .first h2 {
     height: 30px;
   }
   .first {
     display: flex;
     gap: 20px;
+  }
+  .footerimg {
+    height: 50vh;
   }
 }
 @media (max-width: 600px) {
@@ -1317,7 +1340,7 @@ h3 {
     /* background-color: aqua; */
   }
   .imgdivchild {
-    /* width: 90%; */
+    width: 90%; 
     height: 90%;
     top: 10px;
     left: 10px;
@@ -1376,8 +1399,8 @@ h3 {
   .col2row {
     width: 100%;
   }
-  .col2row p{
-    width:40vw;
+  .col2row p {
+    width: 40vw;
   }
   .profileright button {
     margin-top: 20px;
@@ -1399,10 +1422,6 @@ h3 {
     gap: 60px;
 
     /* background-color: #fa5b0f; */
-  }
-  .expdetails p,
-  h3 {
-    margin-bottom: 0px;
   }
   .expleft {
     gap: 40px;
