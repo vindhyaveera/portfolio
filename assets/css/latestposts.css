@@ -320,8 +320,8 @@ body {
   .rowcontent {
     display: grid;
     /* padding:5px; */
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
     height: 120px;
   }
 
@@ -334,8 +334,10 @@ body {
     /* background-color: aliceblue; */
   }
   .latestpost h1 {
-    width: 95vw;
-    height: 60px;
+    width: 90vw;
+    /* height: 40%; */
+    background-color: #fa5b0f;
+    font-size: 20px;
   }
   .parentpost {
     height: auto;
