@@ -324,7 +324,9 @@ body {
     width: 90vw;
     height: 120px;
   }
-
+  .imgcontent{
+    height:45vh;
+  }
   .latestpost button {
     width: 120px;
     height: 50px;
