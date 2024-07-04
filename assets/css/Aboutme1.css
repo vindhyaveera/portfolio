@@ -1368,13 +1368,16 @@ h3 {
     width: 90vw;
     height: 100%;
     font-size: 16px;
-    /* background-color: #222222; */
+    background-color: #ce1111;
   }
   .col1row {
     width: 100%;
   }
   .col2row {
     width: 100%;
+  }
+  .col2row p{
+    width:40vw;
   }
   .profileright button {
     margin-top: 20px;
