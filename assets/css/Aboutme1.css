@@ -1134,8 +1134,8 @@ h3 {
   .profilechild {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 100%;
+    width: 60vh;
+    height: 90vh;
     /* background-color: aqua; */
   }
   .profileimg {
@@ -1205,7 +1205,7 @@ h3 {
     height: 100%;
   }
   .parentoffacts {
-    height: 45vh;
+    height: 65vh;
   }
   .childoffacts {
     height: 100%;
