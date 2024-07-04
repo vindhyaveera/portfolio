@@ -338,7 +338,7 @@ body {
   .latestpost h1 {
     width: 90vw;
     /* height: 40%; */
-    background-color: #fa5b0f;
+    /* background-color: #fa5b0f; */
     font-size: 16px;
   }
   .parentpost {
