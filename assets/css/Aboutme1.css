@@ -1345,14 +1345,10 @@ h3 {
     top: 10px;
     left: 10px;
   }
-  .parentoffacts {
-    height: 40vh;
-    background-color: #fa5b0f; 
-  }
-
+  
   .childoffacts {
-    height: 100vh;
-    background-color: #1619a5;  
+    height: 90%;
+    /* background-color: #1619a5;   */
   }
   .posimg {
     width: 100%;
@@ -1361,7 +1357,7 @@ h3 {
   .profiledetails {
     height: 140vh;
     width: 100vw;
-   background-color: #0fdb2a; 
+   /* background-color: #0fdb2a;  */
   }
   .profilechild{
     height:130vh;
@@ -1423,14 +1419,14 @@ h3 {
     width: 90%;
   }
   .parentoffacts {
-    height: 100vh;
+    height: 75vh;
     /* background-color: #fa5b0f; */
   }
   .expedu {
     height: 130vh;
     gap: 60px;
 
-    background-color: #fa5b0f;
+    /* background-color: #fa5b0f; */
   }
   .expedudetails {
     height: 110vh;
