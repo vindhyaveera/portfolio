@@ -235,12 +235,20 @@ body {
     width: 0;
     height: 0;
   }
-  
+
   .link {
     width: 25%;
   }
+  .footerimg {
+    height: 50vh;
+    background-size: 100vw 50vh;
+  }
+  .headerimg {
+    height: 50vh;
+    background-size: 100vw 50vh;
+  }
   .gridimages {
-    height: 250vh;
+    height: 240vh;
     /* padding:50px,0; */
   }
   .gridimagesinner {
@@ -255,18 +263,17 @@ body {
   }
 }
 @media (max-width: 600px) {
-  
   .gridimages {
-    width:100vw;
+    width: 100vw;
     height: 350vh;
     /* background-color: #fa5b0f; */
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
   .gridimage {
     height: 100%;
-    width:100%;
+    width: 100%;
     object-fit: cover;
     /* background-color: aqua; */
   }
@@ -308,8 +315,8 @@ body {
     height: 120vh;
     background-size: 100vw 120vh;
   }
-  .footend{
-    width:90%;
+  .footend {
+    width: 90%;
   }
 
   .cate {

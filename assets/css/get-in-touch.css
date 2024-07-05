@@ -11,18 +11,18 @@ body {
 }
 .headerimg {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: 100vw 80vh;
   color: white;
 }
 .footerimg {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: 100vw 90vh;
   color: white;
 }
 
@@ -399,6 +399,10 @@ iframe {
     width: 0;
     height: 0;
   }
+  .footerimg {
+    height: 50vh;
+    background-size: 100vw 50vh;
+  }
 
   .link {
     width: 25%;
@@ -410,12 +414,12 @@ iframe {
     width: 90%;
     height: 70%;
   }
-  .parentcontact{
-    height:120vh;
+  .parentcontact {
+    height: 80vh;
   }
   .childcontact {
     width: 90%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -423,15 +427,15 @@ iframe {
     width: 100%;
     height: 100%;
   }
-  /* .parentcontent{
-    height:35vh;
-  } */
+  .styled-input {
+    height:5vh;
+  }
   .social {
     display: flex;
     width: 35%;
     justify-content: center;
   }
- 
+
   .social p {
     width: 100%;
   }
@@ -443,7 +447,6 @@ iframe {
 
 @media (max-width: 600px) {
   .cardsfoot {
-
     width: 85%;
     height: 70%;
     display: grid;
@@ -462,11 +465,11 @@ iframe {
     flex-direction: column;
     /* background-color: #fa5b0f; */
   }
-  .parentcontact{
-    height:130vh;
-     }
-  .childcontact{
-    height:110vh;
+  .parentcontact {
+    height: 130vh;
+  }
+  .childcontact {
+    height: 110vh;
   }
   .cateparent {
     width: 140px;
@@ -498,7 +501,7 @@ iframe {
     width: 60vw;
     background-color: #fa5b0f;
   }
-  .footend{
-    width:90%;
+  .footend {
+    width: 90%;
   }
 }
