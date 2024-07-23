@@ -17,6 +17,114 @@ body {
   background-size: 100vw 80vh;
   color: white;
 }
+
+.menuicon {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  border-radius: 50px;
+  background-color: #494848;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70px;
+  left: 30px;
+}
+.fa-bars {
+  font-size: 24px;
+  color: white;
+}
+.fa-xmark {
+  font-size: 24px;
+}
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  width: 10%;
+}
+.mainmenu {
+  width: 5%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:center;
+    align-items: center; */
+  background-color: #222222;
+  border-radius: 50px;
+  padding: 10px 0;
+  gap: 40px;
+  border-right: 1 solid #fa5b0f;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  /* background-color: blue; */
+}
+.row1 i {
+  color: #fa5b0f;
+}
+.rowclose {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.textcontent {
+  width: 130%;
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  right: -110px;
+}
+.row:hover {
+  color: #fa5b0f;
+  border-right: 2px solid #fa5b0f;
+  .textcontent {
+    transform: translate(5px, 0px);
+  }
+}
+.rowlast:hover {
+  border-right: none;
+}
+
+.menuitemsclick {
+  top: 70px;
+  left: 30px;
+}
+.menu {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  /* background-color: white; */
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.list a {
+  text-decoration: none;
+  color: white;
+}
 .gridimages {
   width: 100%;
   height: 180vh;
@@ -239,6 +347,7 @@ body {
   .link {
     width: 25%;
   }
+
   .footerimg {
     height: 50vh;
     background-size: 100vw 50vh;

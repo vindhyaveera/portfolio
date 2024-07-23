@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
 }
 body {
   width: 100vw;
@@ -13,6 +12,94 @@ body {
   font-family: "roboto, Sans-serif";
   font-size: 16px;
   font-weight: 400;
+}
+.menuicon {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  border-radius: 50px;
+  background-color: #494848;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70px;
+  left: 30px;
+}
+.fa-bars {
+  font-size: 24px;
+}
+.fa-xmark {
+  font-size: 24px;
+}
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  width: 10%;
+}
+.mainmenu {
+  width: 5%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:center;
+    align-items: center; */
+  background-color: #222222;
+  border-radius: 50px;
+  padding: 10px 0;
+  gap: 40px;
+  border-right: 1 solid #fa5b0f;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* width:auto; */
+  position: relative;
+  text-decoration: none;
+  color: white;
+  /* background-color: blue; */
+}
+.row1 i {
+  color: #fa5b0f;
+}
+.rowclose {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.textcontent {
+  width: 130%;
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  right: -110px;
+}
+
+.row:hover {
+  color: #fa5b0f;
+  border-right: 2px solid #fa5b0f;
+  .textcontent {
+    transform: translate(5px, 0px);
+  }
+}
+.rowlast:hover {
+  border-right: none;
+}
+
+.menuitemsclick {
+  top: 70px;
+  left: 30px;
 }
 .menu {
   width: 100%;
@@ -34,6 +121,46 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.typingparent {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: auto;
+}
+.typingparent .text {
+  position: relative;
+  color: #fa5b0f;
+  font-size: 35px;
+  font-weight: 600;
+}
+.typingparent .first-text {
+  color: white;
+}
+.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border-left: 2px solid blue;  */
+  background-color: #1a1b18;
+  overflow: hidden;
+  animation: animate 2s steps(20) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 .profileimg {
   border-radius: 50%;
   border: 10px solid #494848;
@@ -102,9 +229,26 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-right: 25px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
-.btn:hover {
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 170%;
   background-color: gray;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-110%) skewx(-45deg);
+  transition: 0.4s;
+}
+
+.btn:hover::before {
+  transform: translateX(-10%) skewX(-45deg);
   color: white;
 }
 
@@ -117,7 +261,29 @@ body {
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 170%;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-110%) skewx(-45deg);
+  transition: 0.4s;
+}
+
+.btn2:hover::before {
+  transform: translateX(-10%) skewX(-45deg);
+  color: white;
+}
+
 .btn i {
   margin-right: 8px; /* You can adjust this value as needed */
 }

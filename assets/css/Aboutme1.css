@@ -53,6 +53,115 @@ body {
   height: 100%;
   color: black;
 }
+
+.menuicon {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  border-radius: 50px;
+  background-color: #494848;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70px;
+  left: 30px;
+}
+.fa-bars {
+  font-size: 24px;
+  color:white;
+}
+.fa-xmark {
+  font-size: 24px;
+}
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  width: 10%;
+}
+.mainmenu {
+  width: 5%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:center;
+    align-items: center; */
+  background-color: #222222;
+  border-radius: 50px;
+  padding: 10px 0;
+  gap: 40px;
+  border-right: 1 solid #fa5b0f;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  /* background-color: blue; */
+}
+.row1 i {
+  color: #fa5b0f;
+}
+.rowclose {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.textcontent {
+  width: 130%;
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  right: -110px;
+}
+.row:hover {
+  color: #fa5b0f;
+  border-right: 2px solid #fa5b0f;
+  .textcontent {
+    transform: translate(5px, 0px);
+  }
+}
+.rowlast:hover {
+  border-right: none;
+}
+
+.menuitemsclick {
+  top: 70px;
+  left: 30px;
+}
+.menu {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  /* background-color: white; */
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.list a {
+  text-decoration: none;
+  color: white;
+}
+
 .profiledetails {
   width: 100%;
   height: 100%;
@@ -60,12 +169,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3px;
-
   /* background-color: blue; */
 }
+
 .profiledetails:hover .posimg {
   transform: translate(5px, 5px);
 }
+
 .profilechild {
   width: 90%;
   height: 100%;
@@ -95,6 +205,7 @@ body {
   position: relative;
   transition: 0.5s;
 }
+
 .imgdiv {
   width: 75%;
   height: 85%;
@@ -121,6 +232,7 @@ body {
   color: #fa5b0f;
   /* background-color:black; */
 }
+
 .iconborder {
   border-radius: 50px;
   width: 35px;
@@ -131,17 +243,21 @@ body {
   background-color: #222222;
   border: 0.5px solid #fa5b0f;
 }
+
 .iconborder:hover {
   background-color: #fa5b0f;
 }
+
 .iconborder i {
   transition: transform 0.1s ease-in-out;
 }
+
 .iconborder:hover i {
   transform: rotateY(180deg);
   color: black;
   transition: 0.1s transform ease-in-out;
 }
+
 #rotatefull:hover i {
   transform: rotateY(360deg);
   color: black;
@@ -156,6 +272,7 @@ body {
   top: 45px;
   left: 40px;
 }
+
 .tablerow {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -164,9 +281,11 @@ body {
   grid-gap: 0px;
   /* background-color: #1f1f1f; */
 }
+
 .col1row p {
   width: 40vw;
 }
+
 .col2row p {
   width: 10vw;
 }
@@ -209,6 +328,7 @@ body {
 .profileright span {
   color: #fa5b0f;
 }
+
 .profileright button {
   background-color: #fa5b0f;
   border: none;
@@ -218,13 +338,33 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
-.profileright i {
-  margin-right: 8px; /* You can adjust this value as needed */
+
+.profileright button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 170%;
+  background-color: gray;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-120%) skewx(-45deg);
+  transition: 0.4s;
 }
 .profileright button:hover {
-  background-color: gray;
   color: white;
+}
+.profileright button:hover::before {
+  transform: translateX(-10%) skewX(-45deg);
+  color: white;
+}
+
+.profileright i {
+  margin-right: 8px; /* You can adjust this value as needed */
 }
 
 hr {
@@ -232,6 +372,7 @@ hr {
   border-bottom: 0.5px solid rgb(2, 2, 2);
   margin: auto;
 }
+
 .parentoffacts {
   width: 100%;
   height: 50%;
@@ -241,6 +382,7 @@ hr {
   justify-content: flex-start;
   align-items: center;
 }
+
 .childoffacts {
   width: 100%;
   height: 80%;
@@ -250,6 +392,7 @@ hr {
   align-items: center;
   /* background-color: #fa5b0f;  */
 }
+
 .childoffacts h2 {
   width: 80%;
   display: flex;
@@ -257,6 +400,7 @@ hr {
   align-items: start;
   margin-bottom: 40px;
 }
+
 .items {
   width: 30%;
   height: 100%;
@@ -268,6 +412,7 @@ hr {
   border-radius: 20px;
   font-size: 24px;
 }
+
 .imgicon i {
   font-size: 30px;
 }
@@ -276,6 +421,7 @@ hr {
   .imgicon {
     background-color: #fa5b0f;
   }
+
   .imgicon i {
     transform: rotateY(180deg);
     color: black;
@@ -295,6 +441,46 @@ hr {
   align-items: center;
   margin-right: 20px;
 }
+
+.typingparent {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: auto;
+}
+.typingparent .text {
+  position: relative;
+  color: #fa5b0f;
+  font-size: 30px;
+  font-weight: 600;
+}
+.typingparent .first-text {
+  color: white;
+}
+.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border-left: 2px solid blue;  */
+  background-color: #222222;
+  overflow: hidden;
+  animation: animate 2s steps(20) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 .parentitems {
   width: 80%;
   height: 40%;
@@ -575,7 +761,7 @@ h3 {
 }
 .servicecard {
   width: 80%;
-  height: 90vh;
+  height: 50vh;
   /* background-color:aqua;  */
   display: flex;
   flex-direction: column;
@@ -698,6 +884,7 @@ h3 {
   width: 80%;
   height: 120px;
 }
+
 .priceparent {
   width: 100%;
   height: 700px;
@@ -707,6 +894,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
 .pricecards {
   width: 80%;
   height: 85%;
@@ -716,6 +904,7 @@ h3 {
   justify-content: center;
   align-items: start;
 }
+
 .priceparent h2 {
   width: 80%;
   display: flex;
@@ -807,10 +996,28 @@ h3 {
   font-size: 20px;
   cursor: pointer;
   border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
-.third button:hover {
+.third button::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 170%;
   background-color: gray;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-110%) skewx(-45deg);
+  transition: 0.4s;
 }
+
+.third button:hover::before {
+  transform: translateX(-10%) skewX(-45deg);
+  color: white;
+}
+
 .footerimg {
   width: 100vw;
   height: 100vh;
@@ -1128,12 +1335,12 @@ h3 {
   font-size: 20px;
 }
 @media (max-width: 1200px) {
-  .headerimg{
-    height:50vh;
+  .headerimg {
+    height: 50vh;
     background-size: 100vw 50vh;
   }
-  .footerimg{
-    height:50vh;
+  .footerimg {
+    height: 50vh;
     background-size: 100vw 50vh;
   }
   .profiledetails {
@@ -1353,7 +1560,7 @@ h3 {
     top: 10px;
     left: 10px;
   }
-  
+
   .childoffacts {
     height: 90%;
     /* background-color: #1619a5;   */
@@ -1365,10 +1572,10 @@ h3 {
   .profiledetails {
     height: 140vh;
     width: 100vw;
-   /* background-color: #0fdb2a;  */
+    /* background-color: #0fdb2a;  */
   }
-  .profilechild{
-    height:130vh;
+  .profilechild {
+    height: 130vh;
   }
   hr {
     width: 90%;
