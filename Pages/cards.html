@@ -61,3 +61,87 @@
     </div>
  </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="parentoffacts">
+        <div class="childoffacts">
+            <h2>FUN FACTS</h2>
+            <div class="parentitems">
+                <div class="items">
+                    <div class="imgicon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="target-div">
+                        <p class="counter">0<span>K+</span></p>
+                        <p>Lines of Code</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="imgicon">
+                        <i class="fa-brands fa-dropbox"></i>
+                    </div>
+                    <div class="target-div">
+                        <p class="counter">0<span>K+</span></p>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="imgicon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div class="target-div">
+                        <p class="counter">0<span>K+</span></p>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to animate the counter
+        function animateCounter(element, target) {
+            let count = 0;
+            const speed = 200; // Speed of counting, adjust as needed
+
+            function updateCounter() {
+                if (count < target) {
+                    count++;
+                    element.textContent = `${count}<span>K+</span>`;
+                    setTimeout(updateCounter, speed);
+                } else {
+                    element.textContent = `${target}<span>K+</span>`;
+                }
+            }
+
+            updateCounter();
+        }
+
+        // Observe each target div
+        const targets = document.querySelectorAll('.target-div');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counterElement = entry.target.querySelector('.counter');
+                    const targetValue = 100; // Set the target value for each counter
+                    animateCounter(counterElement, targetValue);
+                    observer.unobserve(entry.target); // Stop observing once animation starts
+                }
+            });
+        }, { threshold: 0.5 });
+
+        targets.forEach(target => observer.observe(target));
+    </script>
+</body>
+</html>
