@@ -149,6 +149,7 @@ body {
 .typingparent .first-text {
   color: white;
 }
+
 .sec-text::before {
   content: "";
   position: absolute;
@@ -353,7 +354,7 @@ body {
   }
 
   .sec-text {
-    width: auto;
+    /* width: auto; */
   }
   .leftcontent {
     width: 100%;
@@ -393,6 +394,10 @@ body {
     top: 2%;
     left: 2%;
     position: relative;
+  }
+
+  .typingparent .text {
+    font-size: 15px;
   }
 
   .mainmenusmall.show {
