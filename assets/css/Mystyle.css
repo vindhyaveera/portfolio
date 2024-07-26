@@ -436,6 +436,9 @@ body {
   .iconrow .fa-house{
     position:absolute;
     width:50vw;
+    display:flex;
+    justify-content: end;;
+
     background-color: aqua;
     
   }
