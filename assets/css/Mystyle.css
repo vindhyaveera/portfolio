@@ -430,7 +430,7 @@ body {
     position:absolute;
     width:50vw;
     left:5;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     
   }
   .iconrow .fa-house{
@@ -439,7 +439,7 @@ body {
     display:flex;
     justify-content: end;;
 
-    background-color: aqua;
+    /* background-color: aqua; */
     
   }
 
