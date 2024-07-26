@@ -421,7 +421,7 @@ body {
     width: 100vw;
     padding: 10px;
     position: relative;
-    gap: 150px;
+    gap: 120px;
   }
   .iconrow .fa-xmark {
     color: white;
