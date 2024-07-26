@@ -428,7 +428,7 @@ body {
   .iconrow .fa-xmark {
     color: white;
     position:absolute;
-    left:5px;
+    left:0;
     
   }
 
