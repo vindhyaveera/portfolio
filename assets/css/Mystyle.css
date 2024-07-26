@@ -428,7 +428,14 @@ body {
   .iconrow .fa-xmark {
     color: white;
     position:absolute;
-    left:0;
+    left:5;
+    
+  }
+  .iconrow .fa-house
+  {
+    color: white;
+    position:absolute;
+    left:40;
     
   }
 
