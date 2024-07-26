@@ -1606,12 +1606,12 @@ h3 {
     height: 90%;
     /* background-color: aqua; */
   }
-  .profileimg {
+ .profileimg {
     width: 100vw;
     height: 500px;
     /* background-color: aqua; */
   }
-  .imgdivchild {
+  .imgdivchild { 
     width: 90%;
     height: 90%;
     top: 10px;

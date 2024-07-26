@@ -20,11 +20,48 @@
     <link rel="stylesheet" href="assets/css/Mystyle.css" />
   </head>
   <body>
-    <div class="menuicon">
+    <div id="menuicon" class="menuicon">
       <i class="fa-solid fa-bars"></i>
     </div>
 
-    <div class="mainmenu">
+    <div id="mainmenusmall" class="mainmenusmall">
+      <div class="gridsmall">
+        <!-- <a href="" class="rowclose">
+        </a> -->
+
+        <a href="../portfolio/index.html" class="rowsmall row1">
+          <div class="iconrow">
+            <i class="fa-solid fa-xmark"></i>
+             <i class="fa-solid fa-house"></i>
+          </div>
+
+          <p class="textcontentsmall">Home</p>
+        </a>
+
+        <a href="../portfolio/Pages/aboutme.html" class="rowsmall">
+          <i class="fa-solid fa-user"></i>
+          <p class="textcontentsmall">About</p>
+        </a>
+        <a href="../portfolio/Pages/portfolio.html" class="rowsmall">
+          <i class="fa-solid fa-briefcase"></i>
+          <p class="textcontentsmall">Portfolio</p>
+        </a>
+        <a href="../portfolio/Pages/latestposts.html" class="rowsmall">
+          <i class="fa-solid fa-envelope-open-text"></i>
+          <p class="textcontentsmall">Blog</p>
+        </a>
+        <a href="../portfolio/Pages/get-in-touch.html" class="rowsmall">
+          <i class="fa-regular fa-comments"></i>
+          <p class="textcontentsmall">Contact</p>
+        </a>
+        <a href="" class="row rowlast">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p class="textcontentsmall"></p>
+        </a>
+      </div>
+    </div>
+
+    <div id="mainmenu" class="mainmenu">
       <a href="" class="rowclose">
         <i class="fa-solid fa-xmark"></i>
         <p class="textcontent"></p>
@@ -56,7 +93,7 @@
       </a>
     </div>
 
-    <div class="profilecontent">
+    <div id="profilecontent" class="profilecontent">
       <div class="leftcontent">
         <img class="profileimg" src="assets/images/2_img1.jpg" alt="Profile" />
       </div>
@@ -103,7 +140,7 @@
       textload();
       setInterval(textload, 8000);
     </script>
-    
+
     <script src="./scripts/menu.js"></script>
   </body>
 </html>

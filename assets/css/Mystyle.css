@@ -28,6 +28,7 @@ body {
 .fa-bars {
   font-size: 24px;
 }
+
 .fa-xmark {
   font-size: 24px;
 }
@@ -56,12 +57,19 @@ body {
   top: -100%;
   left: -100%;
 }
+.mainmenusmall {
+  /* left: -100%; */
+  display:none;
+  z-index:10;
+}
+
+
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* width:auto; */
+  /* width:auto;  */
   position: relative;
   text-decoration: none;
   color: white;
@@ -110,6 +118,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.mainmenusmall {
+  display: none; /* Hidden by default */
+}
+
 .list {
   width: 30%;
   display: flex;
@@ -336,8 +348,11 @@ body {
     width: 100%;
     height: 95%;
     flex-direction: column;
+    position: relative;
+    z-index:1;
     /* background-color: #74a01e; */
   }
+
   .leftcontent {
     width: 100%;
     height: 50%;
@@ -356,6 +371,7 @@ body {
     height: 60%;
     /* background-color: #fa5b0f; */
   }
+
   .rightcontent p {
     width: 100%;
     font-size: 20px;
@@ -370,5 +386,82 @@ body {
   }
   .list {
     width: 70%;
+  }
+  .menuicon {
+    top: 2%;
+    left: 2%;
+    position: relative;
+  }
+
+  .mainmenusmall.show {
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    position: absolute;
+  }
+  
+  .fa-xmark{
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    color:grey;
+  }
+  .iconrow{
+    display:flex;
+    width:100vw;
+    padding:10px;
+    position: relative;
+    gap:160px;
+  }
+.iconrow .fa-xmark{
+  color:white;
+
+}
+
+
+  .rowsmall {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80%;
+    background-color: #222222;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 24px;
+  }
+  .rowlast {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80%;
+    background-color: #222222;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 24px;
+  }
+  .rowsmall i {
+    color: #fa5b0f;
+  }
+  .gridsmall {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(1, 20%);
+  }
+  .hide-profilecontent {
+    display: none;
+  }
+  
+  .mainmenu {
+    display: none; /* Hide the main menu on small screens */
   }
 }
