@@ -418,14 +418,18 @@ body {
   }
   .iconrow {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 100vw;
     padding: 10px;
     position: relative;
-    gap: 110px;
+    /* gap: 110px; */
+
   }
   .iconrow .fa-xmark {
     color: white;
+    position:absolute;
+    right:10px;
+    
   }
 
   .rowsmall {
