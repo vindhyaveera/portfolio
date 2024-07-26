@@ -430,12 +430,13 @@ body {
     position:absolute;
     width:50vw;
     left:5;
+    background-color: aliceblue;
     
   }
   .iconrow .fa-house{
     position:absolute;
     width:50vw;
-    left:5;
+    background-color: aqua;
     
   }
 
