@@ -418,6 +418,7 @@ body {
   }
   .iconrow {
     display: flex;
+    justify-content: space-around;
     width: 100vw;
     padding: 10px;
     position: relative;
