@@ -353,6 +353,9 @@ body {
     /* background-color: #74a01e; */
   }
 
+  .sec-text{
+    font-size: 16px;
+  }
   .leftcontent {
     width: 100%;
     height: 50%;
