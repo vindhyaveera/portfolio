@@ -1635,7 +1635,7 @@ h3 {
   }
   .profilechild {
     width: 100vw;
-    height: 190vh;
+    height: auto;
     display:flex;
     flex-direction: column;
   }
