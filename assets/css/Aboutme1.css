@@ -1627,13 +1627,14 @@ h3 {
     height: 80%;
   }
   .profiledetails {
-    height: 200vh;
+    height: 140vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
-     background-color: #0fdb2a;  
+    background-color: #0fdb2a;
   }
   .profilechild {
+    width: 100vw;
     height: 130vh;
   }
   hr {
@@ -1642,9 +1643,9 @@ h3 {
   .profileright {
     margin-top: 0px;
     width: 90vw;
-    /* height: 100vh; */
+    height: 100vh;
 
-    /* background-color: #918985; */
+    background-color: #918985;
   }
   .posimgpara {
     top: 270px;
