@@ -1636,6 +1636,8 @@ h3 {
   .profilechild {
     width: 100vw;
     height: 130vh;
+    display:flex;
+    flex-direction: column;
   }
   hr {
     width: 90%;
