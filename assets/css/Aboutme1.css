@@ -673,12 +673,12 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.languageparent h2{
-  width:80vw;
-  height:5%;
-  color:white;
-  display:flex;
-  justify-content: flex-start; 
+.languageparent h2 {
+  width: 80vw;
+  height: 5%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
   align-items: start;
   /* background-color: antiquewhite; */
 }
@@ -953,12 +953,12 @@ h3 {
 
 .priceparent h2 {
   width: 80%;
-  height:10%;
+  height: 10%;
   display: flex;
   justify-content: flex-start;
   align-items: end;
   color: white;
-   /* background-color: bisque;  */
+  /* background-color: bisque;  */
 }
 .pricecardsbox {
   width: 100%;
@@ -1316,7 +1316,7 @@ h3 {
 }
 .testimonialparent h3 {
   width: 80%;
-  height:5%;
+  height: 5%;
   /* background-color:rgb(24, 177, 177); */
   color: white;
 }
@@ -1523,8 +1523,8 @@ h3 {
   .contentlanguage {
     width: 90%;
   }
-  .languageparent h2{
-    width:90vw;
+  .languageparent h2 {
+    width: 90vw;
   }
   .servicecard {
     width: 90%;
@@ -1606,12 +1606,12 @@ h3 {
     height: 90%;
     /* background-color: aqua; */
   }
- .profileimg {
+  .profileimg {
     width: 100vw;
     height: 500px;
-     background-color: aqua; 
+    background-color: aqua;
   }
-  .imgdivchild { 
+  .imgdivchild {
     width: 90%;
     height: 90%;
     top: 10px;
@@ -1629,6 +1629,8 @@ h3 {
   .profiledetails {
     height: 140vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     /* background-color: #0fdb2a;  */
   }
   .profilechild {
