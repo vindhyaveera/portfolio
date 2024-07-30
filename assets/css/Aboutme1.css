@@ -465,7 +465,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   /* border-left: 2px solid blue;  */
   background-color: #222222;
@@ -1690,6 +1690,9 @@ h3 {
     height: 8%;
   }
 
+  .typingparent .text {
+    font-size: 20px;
+  } 
   .parentitems {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
