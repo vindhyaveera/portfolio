@@ -1609,7 +1609,7 @@ h3 {
   .profileimg {
     width: 100vw;
     height: 500px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .imgdivchild {
     width: 90%;
@@ -1632,7 +1632,7 @@ h3 {
     display: flex;
     flex-direction: column;
     
-    background-color: #0fdb2a;
+    /* background-color: #0fdb2a; */
   }
   .profilechild {
     width: 100vw;
@@ -1648,7 +1648,7 @@ h3 {
     width: 90vw;
     height: 100vh;
 
-    background-color: #918985;
+    /* background-color: #918985; */
   }
   .posimgpara {
     top: 270px;
