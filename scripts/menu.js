@@ -28,6 +28,7 @@ menuicon.addEventListener("click", function () {
 // Toggle main menu on small screens
 menuicon.addEventListener("click", function () {
     mainmenusmall.classList.add("show");
+    profilecontent.classList.toggle("hidden");
     // headmenuicon.style.display = "none"; // Hide the menu icon
   }
 );
