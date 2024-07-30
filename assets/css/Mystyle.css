@@ -423,24 +423,21 @@ body {
     padding: 10px;
     position: relative;
     /* gap: 110px; */
-
   }
   .iconrow .fa-xmark {
     color: white;
-    position:absolute;
-    width:50vw;
-    left:5;
+    position: absolute;
+    width: 50vw;
+    left: 5;
     /* background-color: aliceblue; */
-    
   }
-  .iconrow .fa-house{
-    position:absolute;
-    width:50vw;
-    display:flex;
-    justify-content: end;;
+  .iconrow .fa-house {
+    position: absolute;
+    width: 50vw;
+    display: flex;
+    justify-content: end;
 
     /* background-color: aqua; */
-    
   }
 
   .rowsmall {
@@ -485,4 +482,68 @@ body {
   .mainmenu {
     display: none; /* Hide the main menu on small screens */
   }
+  .btn {
+    background-color: #fa5b0f;
+    border: none;
+    color: black;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+     margin-right: 25px; 
+    position: relative;
+     overflow: hidden;  
+    z-index: 2;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 120%;
+    background-color: gray;
+    top: 0;
+    left:0;
+    z-index: -1;
+    transform: translateX(-110%) skewx(-45deg);
+    transition: 0.4s;
+  }
+
+  .btn:hover::before {
+    transform: translateX(-10%) skewX(-45deg);
+    /* color: white; */
+  }
+
+  .btn2 {
+    background-color: black;
+  
+    border: 1px solid #fa5b0f;
+    color: #fa5b0f;
+    padding: 12px 38px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .btn2::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    background-color: gray;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-110%) skewx(-45deg);
+    transition: 0.4s;
+  }
+  
+  .btn2:hover::before {
+    transform: translateX(-10%) skewX(-45deg);
+    color: white;
+  }
+  
 }
