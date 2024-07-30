@@ -1631,7 +1631,7 @@ h3 {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    /* background-color: #0fdb2a;  */
+     background-color: #0fdb2a;  
   }
   .profilechild {
     height: 130vh;
