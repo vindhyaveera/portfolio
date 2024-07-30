@@ -1755,7 +1755,7 @@ h3 {
     /* background-color: #fa5b0f; */
   }
   .contentlanguage {
-    width: 100vw;
+    width: 90vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -1766,7 +1766,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     /* grid-template-rows: repeat(3, 1fr); */
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     background-color: #222222;
