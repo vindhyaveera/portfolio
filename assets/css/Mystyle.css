@@ -314,7 +314,7 @@ body {
     width: 100%;
     height: 75%;
     flex-direction: column;
-  }
+  }*/
   .leftcontent {
     width: 100%;
     height: 70%;
@@ -337,7 +337,7 @@ body {
   .profileimg {
     width: 500px;
     height: 500px;
-  } */
+  } 
 }
 @media (max-width: 600px) {
   .profilecontent {
