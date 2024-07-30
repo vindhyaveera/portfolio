@@ -1627,7 +1627,7 @@ h3 {
     height: 80%;
   }
   .profiledetails {
-    height: 140vh;
+    height: 200vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
