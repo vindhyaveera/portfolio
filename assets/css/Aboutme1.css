@@ -1760,6 +1760,19 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+  .tvg__progress_list {
+    width: 80vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    /* padding: 20px; */
+  }
+  
   .childlanguageleft {
     width: 90vw;
     height: 50vh;
