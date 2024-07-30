@@ -353,9 +353,8 @@ body {
   .mainmenusmall {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     right: -100%;
-    overflow-y: hidden; 
     top: 0;
     z-index: 10;
     position: absolute;
@@ -384,6 +383,8 @@ body {
 
   .mainmenusmall.show {
     right: 0%;
+    height:100%;
+    
   }
 
 
