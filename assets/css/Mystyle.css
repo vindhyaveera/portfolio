@@ -377,15 +377,16 @@ body {
     z-index:11
   }
 
+
+
   .close .fa-xmark {
     color: white;
   }
 
   .mainmenusmall.show {
     right: 0%;
-    height:100%;
+    height:100vh;
     overflow-y: hidden;
-    
   }
 
 
