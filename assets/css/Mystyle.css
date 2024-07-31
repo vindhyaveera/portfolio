@@ -346,8 +346,6 @@ body {
     flex-direction: column;
     position: relative;
     z-index: 1;
-    /* overflow-x: hidden; */
-     background-color: #74a01e; 
   }
 
   .mainmenusmall {
@@ -362,7 +360,6 @@ body {
     background-color: #000000;
     transform: translateX(100%); /* Move it off-screen using transform */
     transition: transform 1s; /* Smooth transition for sliding in/out */
-  
   }
 
   .close .fa-xmark {
@@ -385,9 +382,9 @@ body {
   }
 
   .mainmenusmall.show {
-     transform: translateX(0);/* Move it off-screen using transform  */
+    transform: translateX(0); /* Move it off-screen using transform  */
 
-     /* right: 0;  */
+    /* right: 0;  */
     /* height: 100vh; */
     /* overflow: hidden; */
   }
