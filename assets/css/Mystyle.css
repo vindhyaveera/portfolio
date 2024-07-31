@@ -341,7 +341,7 @@ body {
 @media (max-width: 600px) {
   .profilecontent {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 95%;
     flex-direction: column;
     position: relative;
