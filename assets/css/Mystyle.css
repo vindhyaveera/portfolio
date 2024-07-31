@@ -117,7 +117,6 @@ body {
   display: none; /* Hidden by default */
 }
 
-
 .list {
   width: 30%;
   display: flex;
@@ -309,7 +308,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-   .profilecontent {
+  .profilecontent {
     display: flex;
     width: 100%;
     height: 75%;
@@ -337,7 +336,7 @@ body {
   .profileimg {
     width: 500px;
     height: 500px;
-  } 
+  }
 }
 @media (max-width: 600px) {
   .profilecontent {
@@ -358,11 +357,10 @@ body {
     top: 0;
     z-index: 10;
     position: absolute;
-    background-color: #000000; 
+    background-color: #000000;
     transition: 0.4s;
   }
 
-  
   .close {
     width: 60px;
     height: 60px;
@@ -374,10 +372,8 @@ body {
     position: absolute;
     left: 30px;
     top: 5;
-    z-index:11
+    z-index: 11;
   }
-
-
 
   .close .fa-xmark {
     color: white;
@@ -385,10 +381,12 @@ body {
 
   .mainmenusmall.show {
     right: 0%;
-    height:1oovh;
+    height: 1oovh;
     overflow: hidden;
+    .profilecontent {
+      opacity: 0;
+    }
   }
-
 
   .leftcontent {
     width: 100%;
