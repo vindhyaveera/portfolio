@@ -134,7 +134,6 @@ body {
 
 /* Show Menu */
 .mainmenusmall.show {
-  display: block; /* Show when needed */
   transform: translateX(0); /* Move to visible position */
   opacity: 1; /* Make it visible */
 }
