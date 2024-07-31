@@ -349,7 +349,7 @@ body {
   }
 
   .mainmenusmall {
-    display: none;
+    display: block;
     width: 100vw;
     height: 100vh;
     /* right: -100%; */
@@ -359,6 +359,8 @@ body {
     position: absolute;
     background-color: #000000;
     transform: translateX(100%); /* Move it off-screen using transform */
+    opacity: 0; /* Initially hidden */
+
   }
 
   .close .fa-xmark {
@@ -381,7 +383,9 @@ body {
   }
 
   .mainmenusmall.show {
-    display: block;
+    /* display: block; */
+    opacity: 1; /* Make it visible */
+
     transform: translateX(0); /* Move it off-screen using transform  */
     transition: transform 1s; /* Smooth transition for sliding in/out */
  
