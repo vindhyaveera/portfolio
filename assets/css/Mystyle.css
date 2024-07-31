@@ -348,22 +348,19 @@ body {
     z-index: 1;
   }
 
-   .mainmenusmall {
-    /* display: block;  */
+  .mainmenusmall {
     width: 100vw;
     height: 100vh;
-    /* right: -100%; */
-    /* overflow-x: hidden; */
+    position: fixed; /* Fixed positioning to keep it in place relative to the viewport */
     top: 0;
-    /* right:0; */
+    right: 0; /* Align to the right edge of the viewport */
     z-index: 10;
-    position: absolute;
     background-color: #000000;
-    transform: translateX(100%); /* Move it off-screen using transform */
+    transform: translateX(100%); /* Off-screen initially */
+    transition: transform 1s ease, opacity 1s ease;
     opacity: 0; /* Initially hidden */
-
-  } 
-
+    overflow: hidden; /* Prevent any overflow inside the menu */
+  }
   
   .close .fa-xmark {
     color: white;
