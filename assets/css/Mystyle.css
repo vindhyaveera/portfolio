@@ -381,11 +381,8 @@ body {
 
   .mainmenusmall.show {
     right: 0%;
-    height: 1oovh;
-    overflow: hidden;
-    .profilecontent {
-      opacity: 0;
-    }
+    height: 150vh;
+    
   }
 
   .leftcontent {
