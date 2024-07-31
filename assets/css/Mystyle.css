@@ -346,6 +346,7 @@ body {
     flex-direction: column;
     position: relative;
     z-index: 1;
+    overflow: hidden;
     /* background-color: #74a01e; */
   }
 
