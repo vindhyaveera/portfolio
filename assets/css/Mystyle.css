@@ -347,7 +347,7 @@ body {
     position: relative;
     z-index: 1;
     /* overflow-x: hidden; */
-    /* background-color: #74a01e; */
+     background-color: #74a01e; 
   }
 
   .mainmenusmall {
