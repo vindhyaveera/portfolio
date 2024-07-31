@@ -349,11 +349,11 @@ body {
   }
 
   .mainmenusmall {
-    display: block;
+    display: none;
     width: 100vw;
     height: 100vh;
     /* right: -100%; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     top: 0;
     z-index: 10;
     position: absolute;
@@ -382,6 +382,7 @@ body {
   }
 
   .mainmenusmall.show {
+    display:block;
     transform: translateX(0); /* Move it off-screen using transform  */
 
     /* right: 0;  */
