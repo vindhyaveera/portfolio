@@ -350,7 +350,16 @@ body {
 
   .mainmenusmall {
     display: none;
-     }
+    width: 100vw;
+    height: 100vh;
+    /* right: -100%; */
+    /* overflow-x: hidden; */
+    top: 0;
+    z-index: 10;
+    position: absolute;
+    background-color: #000000;
+    transform: translateX(100%); /* Move it off-screen using transform */
+  }
 
   .close .fa-xmark {
     color: white;
@@ -372,20 +381,10 @@ body {
   }
 
   .mainmenusmall.show {
-    display:block;
-    width: 100vw;
-    height: 100vh;
-    /* right: -100%; */
-    /* overflow-x: hidden; */
-    top: 0;
-    z-index: 10;
-    position: absolute;
-    background-color: #000000;
-    transform: translateX(100%); /* Move it off-screen using transform */
-    transition: transform 1s; /* Smooth transition for sliding in/out */
-
+    display: block;
     transform: translateX(0); /* Move it off-screen using transform  */
-
+    transition: transform 1s; /* Smooth transition for sliding in/out */
+ 
     /* right: 0;  */
     /* height: 100vh; */
     /* overflow: hidden; */
