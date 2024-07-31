@@ -349,20 +349,19 @@ body {
   }
 
   .mainmenusmall {
-    display: block;
     width: 100vw;
     height: 100vh;
-    /* right: -100%; */
-    /* overflow-x: hidden; */
+    position: fixed; /* Use fixed positioning to ensure it stays in place */
     top: 0;
+    right: 0; /* Ensure it's positioned from the right edge */
     z-index: 10;
-    position: absolute;
     background-color: #000000;
-    transform: translateX(100%); /* Move it off-screen using transform */
+    transform: translateX(100%); /* Move it off-screen initially */
+    transition: transform 1s ease, opacity 1s ease;
     opacity: 0; /* Initially hidden */
-
   }
-
+  
+  
   .close .fa-xmark {
     color: white;
   }
