@@ -5,14 +5,10 @@ const headmenuicon = document.querySelector(".menuicon");
 const mainmenusmall = document.querySelector(".mainmenusmall");
 const profilecontent = document.querySelector(".profilecontent");
 
-
-
 // Toggle main menu on large screens
 menuicon.addEventListener("click", function () {
-  
-    menuitems.classList.add("menuitemsclick");
-    // headmenuicon.style.display = "none"; // Hide the menu icon
-  
+  menuitems.classList.add("menuitemsclick");
+  headmenuicon.style.display = "none"; // Hide the menu icon
 });
 // menuicon.addEventListener("click", function () {
 //   mainmenusmall.classList.toggle("show");
@@ -24,17 +20,14 @@ menuicon.addEventListener("click", function () {
 //   headmenuicon.style.display = "flex"; // Show the menu icon again
 // });
 
-
 // Toggle main menu on small screens
 menuicon.addEventListener("click", function () {
-    mainmenusmall.classList.add("show");
-    // profilecontent.classList.toggle("hidden");
-    // headmenuicon.style.display = "none"; // Hide the menu icon
-  }
-);
-
+  mainmenusmall.classList.add("show");
+  // profilecontent.classList.toggle("hidden");
+  headmenuicon.style.display = "none"; // Hide the menu icon
+});
 
 menuIconclose.addEventListener("click", function () {
   mainmenusmall.classList.remove("show");
-  // headmenuicon.style.display = "flex"; // Show the menu icon again
+  headmenuicon.style.display = "flex"; // Show the menu icon again
 });
