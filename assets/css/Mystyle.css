@@ -382,6 +382,7 @@ body {
   .mainmenusmall.show {
     right: 0%;
     height: 150vh;
+    overflow: hidden;
     
   }
 
