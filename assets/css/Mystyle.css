@@ -349,13 +349,13 @@ body {
   }
 
    .mainmenusmall {
-    display: block; 
+    /* display: block;  */
     width: 100vw;
     height: 100vh;
     /* right: -100%; */
     /* overflow-x: hidden; */
     top: 0;
-    right:0;
+    /* right:0; */
     z-index: 10;
     position: absolute;
     background-color: #000000;
