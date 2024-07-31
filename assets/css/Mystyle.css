@@ -341,26 +341,28 @@ body {
 @media (max-width: 600px) {
   .profilecontent {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 95%;
     flex-direction: column;
     position: relative;
     z-index: 1;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* background-color: #74a01e; */
   }
 
   .mainmenusmall {
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    right: -100%;
+    /* right: -100%; */
     overflow-x: hidden;
     top: 0;
     z-index: 10;
     position: absolute;
     background-color: #000000;
-    transition: 1s;
+    transform: translateX(100%); /* Move it off-screen using transform */
+    transition: transform 1s; /* Smooth transition for sliding in/out */
+  
   }
 
   .close .fa-xmark {
@@ -383,8 +385,10 @@ body {
   }
 
   .mainmenusmall.show {
-    right: 0%;
-    height: 100vh;
+     transform: translateX(0);/* Move it off-screen using transform  */
+
+     /* right: 0;  */
+    /* height: 100vh; */
     /* overflow: hidden; */
   }
 
