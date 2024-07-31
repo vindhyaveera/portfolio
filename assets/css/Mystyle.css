@@ -113,8 +113,47 @@ body {
   justify-content: center;
 }
 
-.mainmenusmall {
+/* .mainmenusmall {
   display: none; /* Hidden by default */
+/* }  */
+/* Main Menu Small */
+.mainmenusmall {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  transform: translateX(100%); /* Start off-screen */
+  opacity: 0; /* Hidden by default */
+  transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+  z-index: 10;
+}
+
+/* Show Menu */
+.mainmenusmall.show {
+  transform: translateX(0); /* Move to visible position */
+  opacity: 1; /* Make it visible */
+}
+
+/* Close Button */
+.close {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  position: absolute;
+  left: 30px;
+  top: 5px;
+  z-index: 11;
+  transition: background-color 0.3s ease;
+}
+
+.close .fa-xmark {
+  color: white;
 }
 
 .list {
@@ -348,54 +387,18 @@ body {
     z-index: 1;
   }
 
-   .mainmenusmall {
+  .mainmenusmall {
     display: block;  
-    width: 100vw;
-    height: 100vh;
-    /* right: -100%; */
-    /* overflow-x: hidden; */
-    top: 0;
-    /* right:0; */
-    z-index: 10;
-    position: absolute;
-    background-color: #000000;
-    transform: translateX(100%); /* Move it off-screen using transform */
-    opacity: 0; /* Initially hidden */
-
-  } 
-
+    transform: translateX(100%);
+    opacity: 0;
+  }
   
-  .close .fa-xmark {
-    color: white;
-  }
-
-  .close {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
-    position: absolute;
-    left: 30px;
-    top: 5;
-    z-index: 11;
-    transition: 1s;
-  }
-
   .mainmenusmall.show {
-    /* display: block; */
-    opacity: 1; /* Make it visible */
-
-    transform: translateX(0); /* Move it off-screen using transform  */
-    transition: transform 1s; /* Smooth transition for sliding in/out */
- 
-    /* right: 0;  */
-    /* height: 100vh; */
-    /* overflow: hidden; */
+    transform: translateX(0);
+    opacity: 1;
   }
 
+   
   .leftcontent {
     width: 100%;
     height: 50%;
