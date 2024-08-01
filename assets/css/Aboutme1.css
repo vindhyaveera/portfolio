@@ -468,13 +468,12 @@ hr {
   width: 100%;
   height: 100%;
   /* border-left: 2px solid blue;  */
-   background-color: #222222; 
+  background-color: #222222;
   /* background-color: #1a1b18; */
 
   overflow: hidden;
   animation: animate 2s steps(20) infinite;
 }
-
 
 @keyframes animate {
   40%,
@@ -1305,18 +1304,25 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .cardtestimonial {
+  /* width: 150%; */
+  /* width: calc(100% * 2); */
   width: 80%;
-  height: 70%;
-  /* background-color: rgb(18, 236, 236); */
+  height: 300px;
+  /* background-color: rgb(18, 236, 236);  */
   display: grid;
   justify-content: space-between;
   align-items: center;
-
-  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  grid-template-columns: repeat(6, 45%);
   grid-gap: 40px;
 }
+
+
 .testimonialparent h3 {
   width: 80%;
   height: 5%;
@@ -1324,17 +1330,52 @@ h3 {
   color: white;
 }
 .cards {
-  display: flex;
   flex-direction: column;
   width: 100%;
-  height: 70%;
+  height: 100%;
   color: white;
   justify-content: center;
   /* align-items: center; */
   background-color: #1f1f1f;
   padding: 20px;
   border-radius: 20px;
+  animation: scroll 15s linear infinite;
+
 }
+@keyframes scroll {
+  0%,
+  10% {
+    transform: translateX(0);
+  }
+  10%,
+  20% {
+    transform: translate(0%);
+  }
+  20%,
+  30% {
+    transform: translate(-100%);
+  }
+  40%,
+  50% {
+    transform: translate(-100%);
+  }
+  60%,
+  70% {
+    transform: translate(-200%);
+  }
+  70%,
+  80% {
+    transform: translate(-200%);
+  }
+  80%,
+  90% {
+    transform: translate(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
 .cards p {
   /* background-color: #fa5b0f; */
   padding: 15px;
@@ -1351,6 +1392,7 @@ h3 {
   justify-content: flex-start;
   align-items: center;
 }
+
 .cardsphoto p {
   border-bottom: 0px;
   display: flex;
@@ -1634,13 +1676,13 @@ h3 {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    
+
     /* background-color: #0fdb2a; */
   }
   .profilechild {
     width: 100vw;
     height: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
   hr {
@@ -1695,7 +1737,7 @@ h3 {
 
   .typingparent .text {
     font-size: 20px;
-  } 
+  }
   .parentitems {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1772,7 +1814,7 @@ h3 {
     background-color: #222222;
     /* padding: 20px; */
   }
-  
+
   .childlanguageleft {
     width: 90vw;
     height: 50vh;
