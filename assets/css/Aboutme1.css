@@ -1329,6 +1329,7 @@ h3 {
   /* background-color:rgb(24, 177, 177); */
   color: white;
 }
+
 .cards {
   flex-direction: column;
   width: 100%;
@@ -1339,13 +1340,14 @@ h3 {
   background-color: #1f1f1f;
   padding: 20px;
   border-radius: 20px;
+  overflow: hidden;
   animation: scroll 15s linear infinite;
 
 }
 @keyframes scroll {
   0%,
   10% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   10%,
   20% {
@@ -1361,18 +1363,18 @@ h3 {
   }
   60%,
   70% {
-    transform: translate(-200%);
+    transform: translate(-210%);
   }
   70%,
   80% {
-    transform: translate(-200%);
+    transform: translate(-210%);
   }
   80%,
   90% {
-    transform: translate(-300%);
+    transform: translate(-318%);
   }
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-318%);
   }
 }
 
